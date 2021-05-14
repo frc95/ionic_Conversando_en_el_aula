@@ -1,0 +1,54 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="alert show" *ngIf="alert">
+      <span class="msg">{{alertMsj}}</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id=header>
+    <!--<h1>Conversando en el aula</h1>-->
+    <img id=titulo src="assets/login/titulo.png">
+    <img id=logo src="assets/login/conversacion.png">
+  </div>
+
+  <form id="form" [formGroup]="loginForm" (ngSubmit)="Login(loginForm)">
+  
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Correo electrónico</ion-label>
+      <ion-input formControlName="email" [value]="email"></ion-input>
+      <ion-icon name="mail-sharp" color="primary" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input formControlName="password" type="password" [value]="password"></ion-input>
+      <ion-icon name="key-sharp" color="primary" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" shape="round">Iniciar sesión</ion-button>
+  </form>
+
+  <ion-fab vertical="bottom" horizontal="start">
+    <ion-fab-button>
+      <ion-icon name="arrow-up-circle-sharp"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="LoginInvitado()" data-desc="Invitado">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="LoginAdmin()" data-desc="Administrador" class="buttonAdmin">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="LoginUsuario()" data-desc="Usuario">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="LoginAnonimo()" data-desc="Anonimo" class="buttonAnonimo">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="LoginTester()" data-desc="Tester" class="buttonTester">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

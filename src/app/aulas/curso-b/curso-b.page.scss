@@ -1,0 +1,41 @@
+.message{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+
+.other-message{
+    background: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.my-message{
+    background: #81ecec;
+    color: rgb(0, 0, 0);
+}
+
+.time{
+    color: rgb(0, 0, 0);;
+    float: right;
+    font-size: small;
+}
+
+.message-input{
+    width: 100%;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 10px;
+    background: #fff;
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.msg-btn{
+    --padding-start: 0.5em;
+    --padding-end: 0.5em;
+}
+
+ion-content{
+    --background: url('../../../assets/home/fondoB.png') 0 0/100% 100% no-repeat;
+}
