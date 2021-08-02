@@ -1,5 +1,12 @@
 # ionic_Conversando_en_el_aula
 
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/36265058/127920271-cd173631-ef6b-4323-9726-6e55643d850e.png" height="500"></td>
+    <td><img src="https://user-images.githubusercontent.com/36265058/127920322-ff85af29-5dae-41c5-8e4b-ed8ccf3ec2b0.png" height="500"></td>
+  </tr>
+</table>
+
 <p>Ingresar un usuario. (registrado en BD)<br>
 La aplicación mostrará dos botones (con colores e imágenes que los distinga) y el texto PPS-4A y<br>
 PPS-4B, respectivamente.<br>
